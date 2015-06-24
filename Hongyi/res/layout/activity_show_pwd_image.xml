@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/my_pwd_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/my_sub_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_pwd_et"
+        android:layout_alignStart="@+id/my_pwd_et"
+        android:layout_below="@+id/my_pwd_et"
+        android:text="显示" />
+
+    <Button
+        android:id="@+id/my_get_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_pwd_et"
+        android:layout_alignStart="@+id/my_pwd_et"
+        android:layout_below="@+id/my_sub_bt"
+        android:text="获取本地图片" />
+
+    <ImageView
+        android:id="@+id/local_image_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_get_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:contentDescription="本地图片"
+        android:src="@drawable/add_normal" />
+
+</RelativeLayout>

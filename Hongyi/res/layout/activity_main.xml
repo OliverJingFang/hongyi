@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RadioGroup
+        android:id="@+id/changeOrderRg"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/status_invalid"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:checked="true"
+            android:gravity="center"
+            android:text="无效订单" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/status_effective"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="有效订单" >
+        </RadioButton>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/contentlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/changeOrderRg" >
+    </FrameLayout>
+
+</RelativeLayout>

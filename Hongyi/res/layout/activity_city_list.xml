@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/main_sview"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/rectancle_shap" >
+
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:background="@color/lighter_gray"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rb_characteristic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="14dip"
+                android:paddingTop="14dip"
+                android:text="@string/characteristic"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb_brand"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="14dip"
+                android:paddingTop="14dip"
+                android:text="@string/brand"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb_commercial_district"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="14dip"
+                android:paddingTop="14dip"
+                android:text="@string/commercial_district"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb_airport_station"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="14dip"
+                android:paddingTop="14dip"
+                android:text="@string/airport_station"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb_administrative_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="14dip"
+                android:paddingTop="14dip"
+                android:text="@string/administrative_area"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb_subway_line"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="14dip"
+                android:paddingTop="14dip"
+                android:text="@string/subway_line"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb_top_landmarks"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="14dip"
+                android:paddingTop="14dip"
+                android:text="@string/top_landmarks"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb_under_provice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="14dip"
+                android:paddingTop="14dip"
+                android:text="@string/under_provice"
+                android:textColor="@color/black" >
+            </RadioButton>
+        </RadioGroup>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/main_sview"
+        android:layout_toRightOf="@+id/main_sview" >
+
+        <ListView
+            android:id="@+id/city_detail_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/lightes_black"
+            android:dividerHeight="0.3dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@+id/city_detail_list"
+            android:background="@color/lightes_black" >
+        </View>
+    </RelativeLayout>
+
+</RelativeLayout>

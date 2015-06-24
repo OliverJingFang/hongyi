@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/font_size_3" >
+
+    <GridView
+        android:id="@+id/show_img_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</LinearLayout>

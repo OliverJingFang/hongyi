@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="下拉刷新实例"
+        android:textColor="@color/white"
+        android:visibility="gone" >
+    </TextView>
+
+    <com.cn.view.pulluprefresh.PullToRefreshListView
+        android:id="@+id/lv_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tv_title" >
+    </com.cn.view.pulluprefresh.PullToRefreshListView>
+
+</RelativeLayout>

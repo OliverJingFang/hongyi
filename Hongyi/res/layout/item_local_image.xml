@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selected_or_clicked"
+    android:padding="@dimen/font_size_3"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/local_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/local_img"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_normal" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/local_img_file_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/font_size_6"
+        android:layout_toRightOf="@+id/local_iv"
+        android:text="wallpaper"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_20" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/local_img_file_size_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/font_size_3"
+        android:layout_toRightOf="@+id/local_img_file_name_tv"
+        android:text="(3)"
+        android:textColor="@color/lighted_black"
+        android:textSize="@dimen/font_size_20" >
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow" >
+    </ImageView>
+
+</RelativeLayout>
